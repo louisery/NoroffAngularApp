@@ -1,0 +1,65 @@
+<div class="[ container ]">
+      <div class="[ row ]">
+            <div class="[ col-sm-12 ]">
+                  <h1>Weather For Norway Oslo<br /></h1>
+                  <div class="[ card ]" *ngFor="let weather of weatherDetail">
+                        Sky Conditions: {{ weather.weather_state_name }}<br />
+                        Min Temperature: {{ weather.min_temp }}<br />
+                        Max Temperature: {{ weather.max_temp }}<br />
+                        Actual Temperature: {{ weather.the_temp }}<br />
+                        Date Created: {{ weather.created }}<br />
+                        Humidity: {{ weather.humidity }}<br />
+                  </div>
+            </div>
+      </div>
+      <br />
+      <div class="[ row ]">
+            <div class="[ col-sm-12 ]">
+                  <h1>Jokes<br /></h1>
+                  <div class="[ card ]" *ngFor="let joke of jokeDetail">
+                        Set up: {{ joke.setup }} <br />
+                        Punchline: {{ joke.punchline }} <br />
+                  </div>
+            </div>
+      </div>
+      <br />
+      <div class="[ row ]">
+            <div class="[ col-sm-12 ]">
+                  <h1>Names<br /></h1>
+                  <div class="[ card ]" *ngFor="let name of nameDetail">
+                        Name: {{ name.name }} <br />
+                        Surname: {{ name.surname }} <br />
+                        Gender: {{ name.gender }} <br />
+                        Region: {{ name.region }} <br />
+                  </div>
+            </div>
+      </div>
+      <br />
+      <div class="[ row ]">
+            <div class="[ col-sm-12 ]">
+                  <h1>Breweries in Washington<br /></h1>
+                  <div class="[ card ]" *ngFor="let brewery of breweryDetail">
+                        Name: {{ brewery.name }} <br />
+                        Type: {{ brewery.brewery_type }} <br />
+                        City: {{ brewery.city }} <br />
+                        Postal Code: {{ brewery.postal_code }} <br />
+                        Street: {{ brewery.street }} <br />
+                        State: {{ brewery.state }} <br />
+                  </div>
+            </div>
+      </div>
+      <br />
+      <div class="[ row ]">
+            <div class="[ col-sm-12 ]">
+                  <h1>SpaceX Launches<br /></h1>
+                  <div class="[ card ]" *ngFor="let spacex of spacexDetail">
+                        Rocket Name: {{ spacex.rocket.rocket_name }} <br />
+                        Flight Number: {{ spacex.flight_number }} <br />
+                        Mission Name: {{ spacex.mission_name }} <br />
+                        Upcoming: {{ spacex.upcoming }} <br />
+                        Launch Year: {{ spacex.launch_year }} <br />
+                        Launch Date: {{ spacex.launch_date_utc }} <br />
+                  </div>
+            </div>
+      </div>
+</div>

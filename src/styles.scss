@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+$gradient-blue: linear-gradient(135deg, rgb(19, 241, 252) 0%, rgb(4, 112, 220) 100%);
+
+body {
+    background: $gradient-blue;
+    font-family: 'Quicksand', sans-serif;
+}
+
+$font: "https://fonts.googleapis.com/css?family=Quicksand";
+
+@if global_variable_exists(font) {
+    @import url($font);
+}
+
+h1 {
+    text-align: center;
+}
