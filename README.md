@@ -2,7 +2,7 @@
 
 [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
-## How to Run Project
+## How to Run the Project
 - Clone the repo
 - `cd` into the project with your terminal
 - Run `npm install`
